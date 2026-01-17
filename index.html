@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Minimal dApp</title>
+</head>
+<body>
+
+  <h1>Simple Storage dApp</h1>
+
+  <button id="connectBtn">Connect MetaMask</button>
+  <p><strong>Account:</strong> <span id="account">Not connected</span></p>
+
+  <input type="number" id="inputValue" placeholder="Enter new value" />
+  <button id="updateBtn">Update Value</button>
+
+  <button id="readBtn">Read Contract Value</button>
+  <p><strong>Contract Value:</strong> <span id="value">-</span></p>
+
+  <p id="error" style="color:red;"></p>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.7.0/dist/ethers.umd.min.js"></script>
+  <script src="abi.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
