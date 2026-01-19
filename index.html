@@ -3,21 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Minimal dApp</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container">
+    <h1>Simple Storage dApp</h1>
 
-  <h1>Simple Storage dApp</h1>
+    <button id="connectBtn">Connect MetaMask</button>
+    <p><strong>Account:</strong> <br><span id="account">Not connected</span></p>
 
-  <button id="connectBtn">Connect MetaMask</button>
-  <p><strong>Account:</strong> <span id="account">Not connected</span></p>
+    <hr style="border: 0.5px solid #333; margin: 20px 0;">
 
-  <input type="number" id="inputValue" placeholder="Enter new value" />
-  <button id="updateBtn">Update Value</button>
+    <input type="number" id="inputValue" placeholder="Enter new value" />
+    <button id="updateBtn">Update Value</button>
 
-  <button id="readBtn">Read Contract Value</button>
-  <p><strong>Contract Value:</strong> <span id="value">-</span></p>
+    <button id="readBtn">Read Contract Value</button>
+    <p><strong>Contract Value:</strong> <span id="value">-</span></p>
 
-  <p id="error" style="color:red;"></p>
+    <p id="error"></p>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/ethers@6.7.0/dist/ethers.umd.min.js"></script>
   <script src="abi.js"></script>
