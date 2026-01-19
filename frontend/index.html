@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Token dApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Token dApp</h1>
+
+    <button id="connectBtn">Connect MetaMask</button>
+    <p><strong>Account:</strong> <br><span id="account">Not connected</span></p>
+    <p><strong>Balance:</strong> <span id="balance">0</span> TOKEN</p>
+
+    <hr style="border: 0.5px solid #333; margin: 20px 0;">
+
+    <h3>Transfer Tokens</h3>
+    <input type="text" id="transferAddress" placeholder="Recipient Address (0x...)" />
+    <input type="number" id="transferAmount" placeholder="Amount" />
+    <button id="transferBtn">Send Tokens</button>
+    
+    <p><small>Estimated Gas: <span id="gasEstimate">-</span></small></p>
+
+    <hr style="border: 0.5px solid #333; margin: 20px 0;">
+
+    <h3>Recent Events</h3>
+    <div id="eventLog" style="font-size: 0.8rem; color: #aaa; max-height: 100px; overflow-y: auto;"></div>
+
+    <p id="error"></p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.7.0/dist/ethers.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
