@@ -1,0 +1,17 @@
+node_modules/
+build/
+cache/
+.env
+hardhat.config.js
+*.log
+.DS_Store
+coverage/
+.idea/
+.vscode/
+dist/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+  

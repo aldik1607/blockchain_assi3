@@ -1,0 +1,44 @@
+{
+  "name": "blockchain_assi3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldik1607/blockchain_assi3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/aldik1607/blockchain_assi3/issues"
+  },
+  "homepage": "https://github.com/aldik1607/blockchain_assi3#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.17",
+    "@nomicfoundation/hardhat-network-helpers": "^3.0.3",
+    
+    "@nomicfoundation/hardhat-verify": "^2.1.3",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/mocha": "^10.0.10",
+    "chai": "^6.2.2",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.12.0",
+    "hardhat": "^2.22.2",
+    "hardhat-gas-reporter": "^1.0.10",
+    "mocha": "^11.7.5",
+    "solidity-coverage": "^0.8.17",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2"
+  }
+}
